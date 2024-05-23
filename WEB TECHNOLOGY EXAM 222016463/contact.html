@@ -1,0 +1,182 @@
+<html>
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All About System</title>
+  <style>
+    /* Normal link */
+    a {
+      padding: 10px;
+      color: white;
+      background-color: greenyellow;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    /* Visited link */
+    a:visited {
+      color: purple;
+    }
+    /* Unvisited link */
+    a:link {
+      color: brown; /* Changed to lowercase */
+    }
+    /* Hover effect */
+    a:hover {
+      background-color: white;
+    }
+
+    /* Active link */
+    a:active {
+      background-color: red;
+    }
+
+    /* Extend margin left for search button */
+    button.btn {
+      margin-left: 15px; /* Adjust this value as needed */
+      margin-top: 4px;
+    }
+    /* Extend margin left for search button */
+    input.form-control {
+      margin-left: 1200px; /* Adjust this value as needed */
+
+      padding: 8px;
+     
+    }
+    section{
+    padding:100px;
+    }
+
+    header{
+    background-color:skyblue;
+    padding: 20px;
+}
+    footer{
+    text-align: center;
+    padding: 15px;
+    background-color:violet;
+}
+.dropdown {
+    position: relative;
+    display: inline;
+    margin-right: 10px;
+
+  }
+  .dropdown-contents {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 0; /* Aligning dropdown contents to the left */
+  }
+  .dropdown:hover .dropdown-contents {
+    display: block;
+  }
+  .dropdown-contents a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  </style>
+  </head>
+
+  <header>
+
+<body bgcolor="chocolate">
+<body style="background-image: url('./image/view.jpg');background-repeat: no-repeat;background-size:cover;">
+<body>
+  <form class="d-flex" role="search" action="search.php">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  <ul style="list-style-type: none; padding: 0;">
+    <li style="display: inline; margin-right: 10px;">
+    <img src="./image/logo.jpg" width="90" height="60" alt="Logo">
+   </li>
+  <li style="display: inline; margin-right: 10px;"><a href="./home.html">HOME</a>
+    <li style="display: inline; margin-right: 10px;"><a href="./about.html">ABOUT</a>
+      <li style="display: inline; margin-right: 10px;"><a href="./contact.html">CONTACT</a>
+    <li style="display: inline; margin-right: 10px;"><a href="./instructors.php">INSTRUCTORS</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./workshops.php">WORKSHOPS</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./attendees.php">ATTENDEES</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./branding_resources.php">BRANDING_RESOURCES</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./ session_attendees.php">SESSION_ATTENDEES</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./session_feedback.php">SESSION_FEEDBACK</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./session_resources.php">SESSION-RESOURCES</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./user_roles.php">USER_ROLES</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./workshop_sessions.php">WORKSHOP_SESSIONS</a></li>
+  
+    <li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="#" style="padding: 10px; color: white; background-color: greenyellow; text-decoration: none; margin-right: 15px;">Settings</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="logout.php">Logout</a>
+      </div>
+    </li><br><br>
+  </ul>
+</header>
+
+<section>
+  <h2><bold><u> OUR CONTACT</u></bold></h2>
+  <ul></ul>
+  <li>Address:450 Main Street, Kigali city, Rwanda</li>
+  <li>Phone: +25072203455</li>
+  <li>Email:maniraguha1@gmail.com</li>
+  <li>X:eric</li>
+  <li>Facebook:eric</li>
+  <li>IG:dodai01</li>
+   <li>website: www.onlinepersonalbrandingwp.org</li>
+</ul>
+
+<form action="submit_contact" method="POST">
+  <label for="name">Names:</label><br>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="phone">Telephone:</label><br>
+  <input type="tel" id="phone" name="phone"><br>
+
+  <label for="X">X:</label><br>
+  <input type="X" id="X" name="X"><br>
+
+  <label for="Ig">Instagram:</label><br>
+  <input type="Ig" id="Ig" name="Ig"><br>
+
+  <label for="Faceb">Facebook:</label><br>
+  <input type="Faceb" id="Faceb" name="Faceb"><br>
+
+<label for="web">website:</label><br>
+  <input type="web" id="web" name="web"><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="4" required></textarea>
+
+  <input type="submit" value="send">
+</form>
+<p>Connect with us on social media or social networkings:
+
+  <a href="https://www.X.com/onlinepersonalbrandingwp">X</a>
+  <a href="https://www.facebook.com/onlinepersonalbrandingwp">Facebook</a>
+  <a href="https://www.ig.com/onlinepersonalbrandingwp">Instagram</a>
+  <a href="https://www.linkedin.com/onlinepersonalbrandingwp">LinkedIn</a>
+  <a href="https://www.onlinepersonalbrandingwp.org/onlinepersonalbrandingwp">Website</a>
+</p>
+</section>
+
+<footer>
+  <center> 
+    <b><h2>UR CBE BIT &copy, 2024 &reg222016463, Designer by:ERIC MANIRAGUHA</h2></b>
+  </center>
+</footer>
+
+</body>
+</html>
